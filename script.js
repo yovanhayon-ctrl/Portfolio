@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initScrollAnimations();
   initNavbar();
   initForm();
+  initCertificateModal();
 });
 
 // ===== SCROLL ANIMATIONS =====
@@ -177,3 +178,78 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // ===== TICKER ANIMATION (Handled by CSS) =====
 // The ticker animation is handled purely by CSS for better performance
 // CSS animation creates a smooth continuous loop effect
+
+// ===== CERTIFICATE MODAL =====
+function initCertificateModal() {
+  const modal = document.getElementById("certificateModal");
+  const closeBtn = document.getElementById("closeModal");
+  const certOpenBtns = document.querySelectorAll(".cert-open-btn");
+  const pdfViewer = document.getElementById("certPdfViewer");
+  const imageViewer = document.getElementById("certImageViewer");
+  const downloadBtn = document.getElementById("certDownloadBtn");
+
+  // Open certificate when clicked
+  certOpenBtns.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const certPath = this.getAttribute("data-cert");
+      openCertificateModal(certPath, pdfViewer, imageViewer, downloadBtn);
+    });
+  });
+
+  // Close button
+  closeBtn.addEventListener("click", function () {
+    closeCertificateModal(modal, pdfViewer, imageViewer);
+  });
+
+  // Close modal when clicking outside
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      closeCertificateModal(modal, pdfViewer, imageViewer);
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.classList.contains("active")) {
+      closeCertificateModal(modal, pdfViewer, imageViewer);
+    }
+  });
+}
+
+function openCertificateModal(certPath, pdfViewer, imageViewer, downloadBtn) {
+  const modal = document.getElementById("certificateModal");
+  const fileExtension = certPath.split(".").pop().toLowerCase();
+
+  // Reset viewers
+  pdfViewer.style.display = "none";
+  imageViewer.style.display = "none";
+
+  // Display appropriate viewer based on file type
+  if (fileExtension === "pdf") {
+    pdfViewer.src = certPath;
+    pdfViewer.style.display = "block";
+  } else if (["jpg", "jpeg", "png", "gif"].includes(fileExtension)) {
+    imageViewer.src = certPath;
+    imageViewer.style.display = "block";
+  }
+
+  // Set download link
+  downloadBtn.href = certPath;
+  downloadBtn.download = certPath.split("/").pop();
+
+  // Show modal
+  modal.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeCertificateModal(modal, pdfViewer, imageViewer) {
+  modal.classList.remove("active");
+  document.body.style.overflow = "auto";
+
+  // Reset viewers
+  pdfViewer.src = "";
+  imageViewer.src = "";
+  pdfViewer.style.display = "none";
+  imageViewer.style.display = "none";
+}
