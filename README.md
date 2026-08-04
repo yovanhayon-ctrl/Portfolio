@@ -39,22 +39,22 @@ Repository ini berisi source code website portfolio pribadi Yoseph, seorang maha
 ## Preview
 
 <div align="center">
-  <img src="images/preview-hero.jpg" alt="Preview Hero Section" width="800">
+  <img src="images/hero.jpg" alt="Preview Hero Section" width="800">
 </div>
 
 > Ganti path gambar di atas dengan screenshot asli tampilan website Anda.
 
 ## Fitur
 
-| Fitur | Deskripsi |
-|---|---|
-| Hero Section | Perkenalan diri dengan efek typing text dan statistik singkat |
-| Tentang Saya | Deskripsi profil, skill, dan pengalaman |
+| Fitur             | Deskripsi                                                                |
+| ----------------- | ------------------------------------------------------------------------ |
+| Hero Section      | Perkenalan diri dengan efek typing text dan statistik singkat            |
+| Tentang Saya      | Deskripsi profil, skill, dan pengalaman                                  |
 | Portfolio Project | Menampilkan project yang telah dikerjakan lengkap dengan tautan langsung |
-| Sertifikat | Galeri sertifikat dengan modal viewer (PDF dan gambar) |
-| Layanan | Daftar jasa yang ditawarkan beserta teknologi terkait |
-| Form Kontak | Formulir validasi sisi klien untuk pengiriman pesan |
-| Responsif | Tampilan optimal di perangkat desktop, tablet, dan mobile |
+| Sertifikat        | Galeri sertifikat dengan modal viewer (PDF dan gambar)                   |
+| Layanan           | Daftar jasa yang ditawarkan beserta teknologi terkait                    |
+| Form Kontak       | Formulir validasi sisi klien untuk pengiriman pesan                      |
+| Responsif         | Tampilan optimal di perangkat desktop, tablet, dan mobile                |
 
 ## Teknologi yang Digunakan
 
@@ -75,6 +75,7 @@ Repository ini berisi source code website portfolio pribadi Yoseph, seorang maha
 </div>
 
 **Frontend**
+
 - **HTML5** — struktur semantik halaman
 - **CSS3** — custom styling (`style.css`)
 - **JavaScript (Vanilla)** — logika interaktif (`script.js`)
@@ -83,11 +84,13 @@ Repository ini berisi source code website portfolio pribadi Yoseph, seorang maha
 - **Google Fonts (Poppins)** — tipografi utama
 
 **Backend & Database**
+
 - **Laravel** — framework PHP untuk pengembangan aplikasi web
 - **PHP** — bahasa pemrograman sisi server
 - **MySQL** — sistem manajemen basis data relasional
 
 **Tools & Version Control**
+
 - **Git** — sistem version control
 - **GitHub** — hosting repository dan kolaborasi kode
 
