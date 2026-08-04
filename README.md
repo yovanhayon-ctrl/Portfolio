@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # <img src="https://api.iconify.design/bi:person-workspace.svg?color=%232196F3" width="32" align="top"> Hi, I'm Yoseph (Yovan Hayon)!
+=======
+# 👨‍💻 Hi, I'm Yoseph (Yovan Hayon)! 
+>>>>>>> c8bed52c364a0cd26cb6067a5a95807424782901
 
 <!-- Animasi Teks Mengetik -->
 <p align="center">
@@ -7,11 +11,19 @@
   </a>
 </p>
 
+<<<<<<< HEAD
 > _"Saya seorang Web Developer yang mengembangkan solusi digital dari konsep hingga implementasi. Menguasai frontend dan backend, menciptakan website yang responsif, user-friendly, dan berkinerja tinggi menggunakan teknologi terkini."_
 
 ---
 
 ## <img src="https://api.iconify.design/bi:tools.svg?color=%23333" width="24" align="top"> Tech Stack & Tools
+=======
+> *"Saya seorang Web Developer yang mengembangkan solusi digital dari konsep hingga implementasi. Menguasai frontend dan backend, menciptakan website yang responsif, user-friendly, dan berkinerja tinggi menggunakan teknologi terkini."*
+
+---
+
+## 🛠️ Tech Stack & Tools
+>>>>>>> c8bed52c364a0cd26cb6067a5a95807424782901
 
 Bahasa, framework, dan alat yang saya gunakan untuk membangun solusi digital:
 
@@ -28,6 +40,7 @@ Bahasa, framework, dan alat yang saya gunakan untuk membangun solusi digital:
 
 ---
 
+<<<<<<< HEAD
 ## <img src="https://api.iconify.design/bi:rocket-takeoff.svg?color=%23333" width="24" align="top"> Featured Projects
 
 Berikut adalah beberapa project terbaru yang telah saya selesaikan:
@@ -47,11 +60,30 @@ Berikut adalah beberapa project terbaru yang telah saya selesaikan:
 
 ### <img src="https://api.iconify.design/bi:shop-window.svg?color=%232196F3" width="20" align="top"> 3. Website Rumah Makan (Saung Tiga)
 
+=======
+## 🚀 Featured Projects
+
+Berikut adalah beberapa project terbaru yang telah saya selesaikan:
+
+### 1. 🚘 Web Bengkel Mobil (YPS Auto Service)
+- **Deskripsi:** Website lengkap untuk bengkel mobil dengan fitur *appointment*, daftar harga service, dan portfolio mobil yang dikerjakan.
+- **Live Demo:** [ypsautoservice.com](https://ypsautoservice.com/)
+- **Preview:**  
+  *(Ganti teks ini dengan file GIF rekaman web bengkel Anda: `![Demo Bengkel](link-gif-bengkel.gif)`)*
+
+### 2. 👟 SneakHub — Toko Online
+- **Deskripsi:** Platform e-commerce untuk penjualan sneaker dengan sistem katalog, *shopping cart*, dan integrasi pembayaran yang *user-friendly*.
+- **Preview:**  
+  *(Ganti teks ini dengan file GIF rekaman SneakHub: `![Demo SneakHub](link-gif-sneakhub.gif)`)*
+
+### 3. 🍲 Website Rumah Makan (Saung Tiga)
+>>>>>>> c8bed52c364a0cd26cb6067a5a95807424782901
 - **Deskripsi:** Website untuk rumah makan dengan menu online, reservasi meja, dan integrasi sistem pemesanan untuk kemudahan pelanggan.
 - **Live Demo:** [rumahmakansaungtiga.my.id](https://rumahmakansaungtiga.my.id/)
 
 ---
 
+<<<<<<< HEAD
 ## <img src="https://api.iconify.design/bi:briefcase.svg?color=%23333" width="24" align="top"> Layanan (Services)
 
 - <img src="https://api.iconify.design/bi:lightning-charge.svg" width="16"> **Website Development:** Pembuatan website custom yang responsif, cepat, dan SEO-friendly.
@@ -64,22 +96,42 @@ Berikut adalah beberapa project terbaru yang telah saya selesaikan:
 
 ## <img src="https://api.iconify.design/bi:award.svg?color=%23333" width="24" align="top"> Sertifikasi
 
+=======
+## 💼 Layanan (Services)
+- ⚡ **Website Development:** Pembuatan website custom yang responsif, cepat, dan SEO-friendly.
+- 🛍️ **E-Commerce Solutions:** Sistem toko online lengkap dengan manajemen inventaris.
+- 📱 **Responsive Design:** Optimalisasi tampilan untuk semua ukuran layar (Mobile First).
+- ⚙️ **Backend Development:** Sistem backend robust menggunakan Laravel & PHP.
+- 🔧 **Website Maintenance:** Dukungan teknis, bug fixes, dan optimasi performa.
+
+---
+
+## 🏆 Sertifikasi
+>>>>>>> c8bed52c364a0cd26cb6067a5a95807424782901
 - **Dicoding:** Dasar AI, Pemula, & Python
 - **Oracle:** Introduction to Java & Java Intermediate
 - **Ditjen Kekayaan Intelektual:** HAKI - Penelitian
 
 ---
 
+<<<<<<< HEAD
 ## <img src="https://api.iconify.design/bi:graph-up.svg?color=%23333" width="24" align="top"> GitHub Analytics
 
 <!-- Menggunakan URL yang lebih stabil dan menambahkan Top Languages -->
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=yovanhayon-ctrl&show_icons=true&theme=transparent&hide_border=true&title_color=2196F3&icon_color=2196F3" alt="Yoseph's GitHub Stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yovanhayon-ctrl&layout=compact&theme=transparent&hide_border=true&title_color=2196F3" alt="Top Languages" />
+=======
+## 📈 GitHub Analytics
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=yovanhayon-ctrl&show_icons=true&theme=radium&hide_border=true&title_color=2196F3" alt="Yoseph's GitHub Stats" />
+>>>>>>> c8bed52c364a0cd26cb6067a5a95807424782901
 </p>
 
 ---
 
+<<<<<<< HEAD
 ## <img src="https://api.iconify.design/bi:envelope-paper.svg?color=%23333" width="24" align="top"> Mari Terhubung!
 
 Punya project website atau peluang kerjasama? Jangan ragu untuk menghubungi saya:
@@ -92,4 +144,18 @@ Punya project website atau peluang kerjasama? Jangan ragu untuk menghubungi saya
 <br>
 <p align="center">
   <i>© 2024 Yoseph. Crafted with <img src="https://api.iconify.design/bi:heart-fill.svg?color=%23ef4444" width="14" align="center"> for Web Development.</i>
+=======
+## 📫 Mari Terhubung!
+
+Punya project website atau peluang kerjasama? Jangan ragu untuk menghubungi saya:
+
+- 📧 **Email:** [yovanhayon@gmail.com](mailto:yovanhayon@gmail.com)
+- 💬 **WhatsApp:** [+62 821 4730 4198](https://wa.me/6282147304198)
+- 📸 **Instagram:** [@yovanhayon](https://instagram.com/yovanhayon)
+- 💼 **LinkedIn:** [linkedin.com/in/yoseph](https://linkedin.com/in/yoseph) *(Pastikan URL LinkedIn Anda sudah benar)*
+
+<br>
+<p align="center">
+  <i>© 2024 Yoseph. Crafted with ❤️ for Web Development.</i>
+>>>>>>> c8bed52c364a0cd26cb6067a5a95807424782901
 </p>
