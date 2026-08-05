@@ -1,6 +1,6 @@
 <div align="center">
 
-# Yoseph — Personal Portfolio
+# Yoseph Kewena Hayon Personal Portfolio
 
 Website portfolio pribadi yang menampilkan profil, project, sertifikat, dan layanan sebagai Web Developer.
 
@@ -41,8 +41,6 @@ Repository ini berisi source code website portfolio pribadi Yoseph, seorang maha
 <div align="center">
   <img src="images/hero.jpg" alt="Preview Hero Section" width="800">
 </div>
-
-> Ganti path gambar di atas dengan screenshot asli tampilan website Anda.
 
 ## Fitur
 
