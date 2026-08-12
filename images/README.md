@@ -1,25 +1,40 @@
-# Folder Gambar Project
+# Folder Gambar
 
-Letakkan gambar project Anda di folder ini. File yang diperlukan:
+Berisi foto profil, gambar pratinjau, dan thumbnail project yang dipakai di `index.html`.
 
-## Nama File yang Harus Digunakan:
+## Berkas yang dipakai di halaman
 
-1. **project-bengkel.jpg** - Gambar untuk project "Web Bengkel Mobil"
-   - Ukuran disarankan: minimum 400x300px
-   - Format: JPG atau PNG
+| Berkas                 | Dimensi   | Dipakai di                                    |
+| ---------------------- | --------- | --------------------------------------------- |
+| `Yoseph Kewena.jpeg`   | 1200×1600 | Foto profil di hero dan section About         |
+| `bengkel.jpg`          | 900×456   | Thumbnail project Web Bengkel Mobil           |
+| `SneakHub.jpg`         | 900×406   | Thumbnail project SneakHub                    |
+| `rmsaungtiga.jpg`      | 900×488   | Thumbnail project Website Rumah Makan         |
+| `og-preview.jpg`       | 1200×630  | Pratinjau saat tautan dibagikan (Open Graph)  |
 
-2. **project-sneakhub.jpg** - Gambar untuk project "SneakHub - Toko Online"
-   - Ukuran disarankan: minimum 400x300px
-   - Format: JPG atau PNG
+## Berkas yang tidak dipakai di halaman
 
-3. **project-rumah-makan.jpg** - Gambar untuk project "Website Rumah Makan"
-   - Ukuran disarankan: minimum 400x300px
-   - Format: JPG atau PNG
+| Berkas       | Keterangan                                   |
+| ------------ | -------------------------------------------- |
+| `hero.jpg`   | Dipakai di README utama, dan sebagai sumber `og-preview.jpg` |
+| `me.jpg`     | Tidak dirujuk di mana pun                    |
+| `Yoseph.jpg` | Tidak dirujuk di mana pun                    |
 
-## Tips:
+## Kalau mengganti gambar
 
-- Gunakan screenshot atau mockup dari website project Anda
-- Pastikan gambar berkualitas tinggi dan representatif
-- Semua gambar akan ditampilkan dengan ukuran 200px height dan akan di-crop sesuai container
+Perkecil dulu sebelum dimasukkan. Foto langsung dari kamera biasanya berukuran
+3000 piksel lebih, padahal thumbnail project hanya tampil sekitar 400 piksel —
+selisihnya membuat halaman jauh lebih berat tanpa manfaat yang terlihat.
 
-Setelah menambahkan gambar, portfolio Anda akan menampilkan gambar project secara otomatis!
+Ukuran yang memadai:
+
+- **Thumbnail project** — lebar 900 px
+- **Foto profil** — sisi terpanjang 1600 px
+- **Kualitas JPEG** — 80–85, sudah cukup dan hemat
+
+Setelah mengganti, sesuaikan juga atribut `width` dan `height` pada tag `<img>`
+di `index.html`. Atribut itu memberi tahu browser rasio gambar sejak awal supaya
+tata letak tidak melompat saat gambar selesai dimuat.
+
+Nama berkas bersifat case-sensitive di GitHub Pages. `Foto.JPG` dan `foto.jpg`
+dianggap dua berkas berbeda di sana, meski di Windows keduanya sama.

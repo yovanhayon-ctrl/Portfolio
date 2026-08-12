@@ -1,9 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+
+    <title>Yoseph Kewena Hayon — Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio Yoseph Kewena Hayon, Web Developer yang membangun website responsif dengan HTML, CSS, JavaScript, Bootstrap, dan Laravel. Lihat project, sertifikat, dan layanan yang ditawarkan."
+    />
+    <meta name="author" content="Yoseph Kewena Hayon" />
+    <meta name="theme-color" content="#0a0f1e" />
+    <link rel="canonical" href="https://yovanhayon-ctrl.github.io/Portfolio/" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Open Graph: pratinjau saat tautan dibagikan ke WhatsApp, LinkedIn, dsb. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Yoseph Kewena Hayon" />
+    <meta property="og:title" content="Yoseph Kewena Hayon — Web Developer" />
+    <meta
+      property="og:description"
+      content="Web Developer yang membangun website responsif dengan HTML, CSS, JavaScript, Bootstrap, dan Laravel."
+    />
+    <meta
+      property="og:url"
+      content="https://yovanhayon-ctrl.github.io/Portfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://yovanhayon-ctrl.github.io/Portfolio/images/og-preview.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="id_ID" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yoseph Kewena Hayon — Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Web Developer yang membangun website responsif dengan HTML, CSS, JavaScript, Bootstrap, dan Laravel."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yovanhayon-ctrl.github.io/Portfolio/images/og-preview.jpg"
+    />
+
+    <!-- Buka koneksi ke CDN lebih awal agar font & CSS tiba lebih cepat -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Bootstrap 5 -->
     <link
@@ -36,8 +81,11 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Buka menu navigasi"
         >
-          <span class="hamburger-icon">
+          <span class="hamburger-icon" aria-hidden="true">
             <span></span><span></span><span></span>
           </span>
         </button>
@@ -134,8 +182,11 @@
               <div class="img-circle">
                 <img
                   src="images/Yoseph Kewena.jpeg"
-                  alt="Yoseph"
+                  alt="Foto profil Yoseph Kewena Hayon"
                   class="profile-image"
+                  width="1200"
+                  height="1600"
+                  fetchpriority="high"
                 />
               </div>
               <span class="dot-deco dot1"></span>
@@ -191,7 +242,14 @@
             <div class="about-card position-relative">
               <div class="about-card-inner">
                 <div class="about-pattern"></div>
-                <img src="images/Yoseph Kewena.jpeg" alt="Yoseph" class="about-image" />
+                <img
+                  src="images/Yoseph Kewena.jpeg"
+                  alt="Foto profil Yoseph Kewena Hayon"
+                  class="about-image"
+                  width="1200"
+                  height="1600"
+                  loading="lazy"
+                />
               </div>
               <div class="exp-badge">
                 <strong>1+</strong>
@@ -288,8 +346,11 @@
                 <div class="project-img p-thumb-1">
                   <img
                     src="images/bengkel.jpg"
-                    alt="Web Bengkel Mobil"
+                    alt="Tangkapan layar website Bengkel Mobil"
                     class="project-image"
+                    width="900"
+                    height="456"
+                    loading="lazy"
                   />
                   <div class="project-overlay">
                     <button class="btn overlay-btn">
@@ -300,7 +361,7 @@
               </a>
               <div class="project-body">
                 <span class="project-cat">Web Development</span>
-                <h5 class="project-name">Web Bengkel Mobil</h5>
+                <h3 class="project-name">Web Bengkel Mobil</h3>
                 <p class="project-desc">
                   Website lengkap untuk bengkel mobil dengan fitur appointment,
                   daftar harga service, dan portfolio mobil yang dikerjakan.
@@ -321,8 +382,11 @@
                 <div class="project-img p-thumb-2">
                   <img
                     src="images/SneakHub.jpg"
-                    alt="SneakHub Toko Online"
+                    alt="Tangkapan layar toko online SneakHub"
                     class="project-image"
+                    width="900"
+                    height="406"
+                    loading="lazy"
                   />
                   <div class="project-overlay">
                     <button class="btn overlay-btn">
@@ -333,7 +397,7 @@
               </a>
               <div class="project-body">
                 <span class="project-cat">E-Commerce</span>
-                <h5 class="project-name">SneakHub — Toko Online</h5>
+                <h3 class="project-name">SneakHub — Toko Online</h3>
                 <p class="project-desc">
                   Platform e-commerce untuk penjualan sneaker dengan sistem
                   katalog, shopping cart, dan payment integration yang
@@ -356,8 +420,11 @@
                 <div class="project-img p-thumb-3">
                   <img
                     src="images/rmsaungtiga.jpg"
-                    alt="Website Rumah Makan"
+                    alt="Tangkapan layar website Rumah Makan Saung Tiga"
                     class="project-image"
+                    width="900"
+                    height="488"
+                    loading="lazy"
                   />
                   <div class="project-overlay">
                     <button class="btn overlay-btn">
@@ -368,7 +435,7 @@
               </a>
               <div class="project-body">
                 <span class="project-cat">Web Development</span>
-                <h5 class="project-name">Website Rumah Makan</h5>
+                <h3 class="project-name">Website Rumah Makan</h3>
                 <p class="project-desc">
                   Website untuk rumah makan dengan menu online, reservasi meja,
                   dan integrasi sistem pemesanan untuk kemudahan pelanggan.
@@ -407,7 +474,7 @@
                 </div>
                 <span class="cert-year">2024</span>
               </div>
-              <h5 class="cert-title">Dicoding - Dasar AI</h5>
+              <h3 class="cert-title">Dicoding - Dasar AI</h3>
               <p class="cert-issuer">Issued by: Dicoding</p>
               <p class="cert-desc">
                 Sertifikat penguasaan dasar artificial intelligence dan machine
@@ -434,7 +501,7 @@
                 </div>
                 <span class="cert-year">2023</span>
               </div>
-              <h5 class="cert-title">Dicoding - Pemula</h5>
+              <h3 class="cert-title">Dicoding - Pemula</h3>
               <p class="cert-issuer">Issued by: Dicoding</p>
               <p class="cert-desc">
                 Sertifikat penyelesaian program Dicoding untuk pemula, mencakup
@@ -461,7 +528,7 @@
                 </div>
                 <span class="cert-year">2023</span>
               </div>
-              <h5 class="cert-title">Dicoding - Python</h5>
+              <h3 class="cert-title">Dicoding - Python</h3>
               <p class="cert-issuer">Issued by: Dicoding</p>
               <p class="cert-desc">
                 Sertifikat penguasaan bahasa pemrograman Python dari platform
@@ -488,7 +555,7 @@
                 </div>
                 <span class="cert-year">2023</span>
               </div>
-              <h5 class="cert-title">Introduction to Java</h5>
+              <h3 class="cert-title">Introduction to Java</h3>
               <p class="cert-issuer">Issued by: Oracle</p>
               <p class="cert-desc">
                 Sertifikat pengenalan bahasa pemrograman Java dan fundamental
@@ -515,7 +582,7 @@
                 </div>
                 <span class="cert-year">2024</span>
               </div>
-              <h5 class="cert-title">Java Intermediate</h5>
+              <h3 class="cert-title">Java Intermediate</h3>
               <p class="cert-issuer">Issued by: Oracle</p>
               <p class="cert-desc">
                 Sertifikat penguasaan Java tingkat menengah dengan fokus pada
@@ -542,7 +609,7 @@
                 </div>
                 <span class="cert-year">2024</span>
               </div>
-              <h5 class="cert-title">HAKI - Penelitian</h5>
+              <h3 class="cert-title">HAKI - Penelitian</h3>
               <p class="cert-issuer">Issued by: Ditjen Kekayaan Intelektual</p>
               <p class="cert-desc">
                 Sertifikat Hak Asasi Kekayaan Intelektual untuk penelitian dan
@@ -583,7 +650,7 @@
               <div class="service-icon">
                 <i class="bi bi-lightning-charge-fill"></i>
               </div>
-              <h5 class="service-name">Website Development</h5>
+              <h3 class="service-name">Website Development</h3>
               <p class="service-desc">
                 Pembuatan website custom dari nol sesuai kebutuhan bisnis Anda.
                 Responsive, fast, dan SEO-friendly dengan best practices
@@ -598,7 +665,7 @@
           <div class="col-lg-4 col-md-6 fade-up">
             <div class="service-card">
               <div class="service-icon"><i class="bi bi-bag-heart"></i></div>
-              <h5 class="service-name">E-Commerce Solutions</h5>
+              <h3 class="service-name">E-Commerce Solutions</h3>
               <p class="service-desc">
                 Toko online lengkap dengan sistem katalog, shopping cart,
                 payment gateway, dan inventory management terintegrasi.
@@ -613,7 +680,7 @@
           <div class="col-lg-4 col-md-6 fade-up">
             <div class="service-card">
               <div class="service-icon"><i class="bi bi-bootstrap"></i></div>
-              <h5 class="service-name">Responsive Design</h5>
+              <h3 class="service-name">Responsive Design</h3>
               <p class="service-desc">
                 Desain website yang responsif dan mobile-first, optimal di semua
                 perangkat dengan loading time yang cepat.
@@ -627,7 +694,7 @@
           <div class="col-lg-4 col-md-6 fade-up">
             <div class="service-card">
               <div class="service-icon"><i class="bi bi-code-square"></i></div>
-              <h5 class="service-name">Backend Development</h5>
+              <h3 class="service-name">Backend Development</h3>
               <p class="service-desc">
                 Sistem backend yang robust menggunakan Laravel dan PHP. Database
                 design, API development, dan server-side logic yang scalable.
@@ -643,7 +710,7 @@
               <div class="service-icon">
                 <i class="bi bi-pencil-square"></i>
               </div>
-              <h5 class="service-name">Website Maintenance</h5>
+              <h3 class="service-name">Website Maintenance</h3>
               <p class="service-desc">
                 Dukungan teknis berkelanjutan, bug fixes, updates, dan optimasi
                 website untuk memastikan performa tetap optimal.
@@ -660,7 +727,7 @@
               <div class="service-icon">
                 <i class="bi bi-chat-dots-fill"></i>
               </div>
-              <h5 class="service-name">Konsultasi Web</h5>
+              <h3 class="service-name">Konsultasi Web</h3>
               <p class="service-desc">
                 Konsultasi teknis untuk membantu Anda memilih teknologi tepat,
                 arsitektur website, dan strategi development yang optimal.
@@ -731,16 +798,23 @@
                 href="https://instagram.com/yovanhayon"
                 class="social-btn"
                 target="_blank"
-                ><i class="bi bi-instagram"></i
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram" aria-hidden="true"></i
               ></a>
-              <a href="mailto:yovanhayon@gmail.com" class="social-btn"
-                ><i class="bi bi-envelope"></i
+              <a
+                href="mailto:yovanhayon@gmail.com"
+                class="social-btn"
+                aria-label="Kirim email"
+                ><i class="bi bi-envelope" aria-hidden="true"></i
               ></a>
               <a
                 href="https://wa.me/6282147304198"
                 class="social-btn"
                 target="_blank"
-                ><i class="bi bi-whatsapp"></i
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                ><i class="bi bi-whatsapp" aria-hidden="true"></i
               ></a>
             </div>
           </div>
@@ -922,6 +996,7 @@
           <img
             id="certImageViewer"
             class="cert-image-viewer"
+            alt="Pratinjau sertifikat"
             style="display: none"
           />
         </div>
