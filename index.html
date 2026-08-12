@@ -743,7 +743,7 @@
 
           <!-- Form -->
           <div class="col-lg-7 fade-up">
-            <div class="contact-form-card">
+            <form class="contact-form-card" id="contactForm" novalidate>
               <div class="row g-3 mb-3">
                 <div class="col-md-6">
                   <label class="form-label-custom">First Name</label>
@@ -801,18 +801,14 @@
                 ></textarea>
                 <div class="form-err" id="msg-err">Please enter a message.</div>
               </div>
-              <button
-                class="btn btn-submit w-100"
-                id="submitBtn"
-                onclick="handleSubmit()"
-              >
+              <button type="submit" class="btn btn-submit w-100" id="submitBtn">
                 Send Message <i class="bi bi-send-fill ms-2"></i>
               </button>
               <div class="form-success mt-3" id="successMsg">
                 <i class="bi bi-check-circle-fill me-2"></i> Message sent! I'll
                 get back to you within 24 hours.
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

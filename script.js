@@ -93,14 +93,16 @@ function initNavbar() {
 
 // ===== FORM HANDLING =====
 function initForm() {
-  const form = document.getElementById("submitBtn");
+  const form = document.getElementById("contactForm");
   if (form) {
-    form.addEventListener("click", handleSubmit);
+    form.addEventListener("submit", handleSubmit);
   }
 }
 
 function handleSubmit(e) {
   e.preventDefault();
+
+  const form = e.currentTarget;
 
   const fname = document.getElementById("fname").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -125,12 +127,12 @@ function handleSubmit(e) {
     return;
   }
 
+  // Clear form
+  form.reset();
+
   // Show success message
   const successMsg = document.getElementById("successMsg");
-  successMsg.style.display = "flex";
-
-  // Clear form
-  document.querySelector(".contact-form-card").reset();
+  successMsg.style.display = "block";
 
   // Hide success message after 5 seconds
   setTimeout(() => {
