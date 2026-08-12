@@ -99,10 +99,20 @@ function initForm() {
   }
 }
 
-function handleSubmit(e) {
+// Endpoint Web3Forms. Access key-nya ada di input hidden #accessKey pada index.html.
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+const ACCESS_KEY_PLACEHOLDER = "PASTE_ACCESS_KEY_DI_SINI";
+
+async function handleSubmit(e) {
   e.preventDefault();
 
   const form = e.currentTarget;
+  const successMsg = document.getElementById("successMsg");
+  const failMsg = document.getElementById("failMsg");
+
+  // Sembunyikan pesan dari percobaan sebelumnya
+  successMsg.style.display = "none";
+  failMsg.style.display = "none";
 
   const fname = document.getElementById("fname").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -127,17 +137,59 @@ function handleSubmit(e) {
     return;
   }
 
-  // Clear form
-  form.reset();
+  // Belum dikonfigurasi — jangan pura-pura berhasil
+  const accessKey = document.getElementById("accessKey").value.trim();
+  if (!accessKey || accessKey === ACCESS_KEY_PLACEHOLDER) {
+    showFailure(
+      "Form belum dikonfigurasi. Silakan hubungi saya lewat WhatsApp atau email di samping."
+    );
+    return;
+  }
 
-  // Show success message
-  const successMsg = document.getElementById("successMsg");
-  successMsg.style.display = "block";
+  setLoading(true);
 
-  // Hide success message after 5 seconds
-  setTimeout(() => {
-    successMsg.style.display = "none";
-  }, 5000);
+  try {
+    const response = await fetch(WEB3FORMS_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(Object.fromEntries(new FormData(form))),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.message || "Pengiriman gagal.");
+    }
+
+    form.reset();
+    successMsg.style.display = "block";
+    setTimeout(() => {
+      successMsg.style.display = "none";
+    }, 5000);
+  } catch (err) {
+    // Isian pengunjung sengaja tidak dihapus supaya tidak perlu mengetik ulang
+    showFailure(
+      "Pesan gagal terkirim. Periksa koneksi internet Anda lalu coba lagi, atau hubungi saya lewat WhatsApp."
+    );
+    console.error("Pengiriman form gagal:", err);
+  } finally {
+    setLoading(false);
+  }
+}
+
+function setLoading(isLoading) {
+  const btn = document.getElementById("submitBtn");
+  btn.classList.toggle("is-loading", isLoading);
+  btn.disabled = isLoading;
+}
+
+function showFailure(text) {
+  const failMsg = document.getElementById("failMsg");
+  document.getElementById("failText").textContent = text;
+  failMsg.style.display = "block";
 }
 
 function showError(errorId) {

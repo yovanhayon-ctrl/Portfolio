@@ -744,13 +744,39 @@
           <!-- Form -->
           <div class="col-lg-7 fade-up">
             <form class="contact-form-card" id="contactForm" novalidate>
+              <!--
+                GANTI nilai access_key di bawah dengan kunci dari web3forms.com.
+                Selama masih "PASTE_ACCESS_KEY_DI_SINI", form akan menolak kirim
+                dan menampilkan pesan bahwa form belum dikonfigurasi.
+              -->
+              <input
+                type="hidden"
+                name="access_key"
+                id="accessKey"
+                value="PASTE_ACCESS_KEY_DI_SINI"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Portfolio Yoseph — Form Kontak"
+              />
+              <!-- Honeypot anti-spam: disembunyikan dari pengunjung, hanya bot yang mengisinya -->
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="form-honeypot"
+                tabindex="-1"
+                autocomplete="off"
+              />
               <div class="row g-3 mb-3">
                 <div class="col-md-6">
-                  <label class="form-label-custom">First Name</label>
+                  <label class="form-label-custom" for="fname">First Name</label>
                   <input
                     type="text"
                     class="form-control form-custom"
                     id="fname"
+                    name="First Name"
+                    autocomplete="given-name"
                     placeholder="First Name"
                   />
                   <div class="form-err" id="fname-err">
@@ -758,21 +784,25 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label-custom">Last Name</label>
+                  <label class="form-label-custom" for="lname">Last Name</label>
                   <input
                     type="text"
                     class="form-control form-custom"
                     id="lname"
+                    name="Last Name"
+                    autocomplete="family-name"
                     placeholder="Last Name"
                   />
                 </div>
               </div>
               <div class="mb-3">
-                <label class="form-label-custom">Email Address</label>
+                <label class="form-label-custom" for="email">Email Address</label>
                 <input
                   type="email"
                   class="form-control form-custom"
                   id="email"
+                  name="email"
+                  autocomplete="email"
                   placeholder="yourname@example.com"
                 />
                 <div class="form-err" id="email-err">
@@ -780,11 +810,12 @@
                 </div>
               </div>
               <div class="mb-3">
-                <label class="form-label-custom">Subject</label>
+                <label class="form-label-custom" for="subject">Subject</label>
                 <input
                   type="text"
                   class="form-control form-custom"
                   id="subject"
+                  name="subject"
                   placeholder="Project Collaboration"
                 />
                 <div class="form-err" id="subject-err">
@@ -792,21 +823,32 @@
                 </div>
               </div>
               <div class="mb-4">
-                <label class="form-label-custom">Message</label>
+                <label class="form-label-custom" for="message">Message</label>
                 <textarea
                   class="form-control form-custom"
                   id="message"
+                  name="message"
                   rows="5"
                   placeholder="Tell me about your project..."
                 ></textarea>
                 <div class="form-err" id="msg-err">Please enter a message.</div>
               </div>
               <button type="submit" class="btn btn-submit w-100" id="submitBtn">
-                Send Message <i class="bi bi-send-fill ms-2"></i>
+                <span id="submitLabel"
+                  >Send Message <i class="bi bi-send-fill ms-2"></i
+                ></span>
+                <span id="submitSpinner" class="submit-spinner"
+                  ><span class="spinner-border spinner-border-sm me-2"></span
+                  >Mengirim...</span
+                >
               </button>
-              <div class="form-success mt-3" id="successMsg">
+              <div class="form-success mt-3" id="successMsg" role="status">
                 <i class="bi bi-check-circle-fill me-2"></i> Message sent! I'll
                 get back to you within 24 hours.
+              </div>
+              <div class="form-fail mt-3" id="failMsg" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <span id="failText"></span>
               </div>
             </form>
           </div>
@@ -832,20 +874,15 @@
             href="https://github.com/yovanhayon-ctrl"
             class="footer-social"
             target="_blank"
+            rel="noopener noreferrer"
             title="GitHub"
             ><i class="bi bi-github"></i
-          ></a>
-          <a
-            href="https://twitter.com"
-            class="footer-social"
-            target="_blank"
-            title="Twitter"
-            ><i class="bi bi-twitter"></i
           ></a>
           <a
             href="https://linkedin.com/in/yoseph"
             class="footer-social"
             target="_blank"
+            rel="noopener noreferrer"
             title="LinkedIn"
             ><i class="bi bi-linkedin"></i
           ></a>
@@ -853,6 +890,7 @@
             href="https://instagram.com/yovanhayon"
             class="footer-social"
             target="_blank"
+            rel="noopener noreferrer"
             title="Instagram"
             ><i class="bi bi-instagram"></i
           ></a>

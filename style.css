@@ -1165,6 +1165,42 @@ body {
   display: none;
 }
 
+.form-fail {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #f87171;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  display: none;
+}
+
+/* Honeypot anti-spam — disembunyikan dari mata dan dari screen reader */
+.form-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* State loading pada tombol submit */
+.submit-spinner {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.btn-submit.is-loading #submitLabel {
+  display: none;
+}
+.btn-submit.is-loading .submit-spinner {
+  display: inline-flex;
+}
+.btn-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 .btn-submit {
   background: linear-gradient(135deg, var(--blue2), var(--blue3));
   color: #fff !important;
