@@ -1245,11 +1245,123 @@ body {
 .site-footer {
   background: var(--navy2);
   border-top: 1px solid var(--border);
-  padding: 2.2rem 0;
+  padding: 3rem 0 1.6rem;
+}
+
+/* --- Bagian atas: brand, navigasi, kontak --- */
+.footer-brand {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.7rem;
+}
+.footer-about {
+  font-size: 0.85rem;
+  color: var(--muted);
+  max-width: 34ch;
+  margin-bottom: 0.9rem;
+}
+.footer-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.78rem;
+  color: var(--blue4);
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+}
+
+.footer-heading {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.9rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.footer-links a {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--blue4);
+}
+
+/* Kontak: ikon dan teks sejajar, teks panjang boleh memotong baris */
+.footer-contact a {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  overflow-wrap: anywhere;
+}
+.footer-contact i {
+  color: var(--blue4);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+/* --- Bagian bawah: hak cipta dan ikon sosial --- */
+.footer-bottom {
+  margin-top: 2.2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.footer-social-row {
+  display: flex;
+  gap: 0.5rem;
 }
 .footer-copy {
   font-size: 0.85rem;
   color: var(--muted);
+  margin: 0;
+}
+
+/* Di layar kecil semuanya dipusatkan, termasuk teks hak cipta yang
+   sebelumnya rata kiri sementara ikonnya rata tengah */
+@media (max-width: 767.98px) {
+  .site-footer {
+    text-align: center;
+    padding: 2.4rem 0 1.4rem;
+  }
+  .footer-about {
+    max-width: 100%;
+  }
+  .footer-links {
+    align-items: center;
+  }
+  .footer-contact a {
+    justify-content: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.1rem;
+  }
+  .footer-copy {
+    text-align: center;
+  }
+  .footer-social-row {
+    justify-content: center;
+  }
 }
 .footer-social {
   width: 36px;

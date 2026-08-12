@@ -937,25 +937,89 @@
 
     <!-- ===== FOOTER ===== -->
     <footer class="site-footer">
-      <div
-        class="container-xl d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
-      >
-        <p class="footer-copy mb-0">
-          © 2025 <strong class="text-accent">Yoseph</strong>. Crafted with
-          <i
-            class="bi bi-heart-fill"
-            style="color: #ef4444; font-size: 0.8rem"
-          ></i>
-          for Web Development.
-        </p>
-        <div class="d-flex gap-2">
+      <div class="container-xl">
+        <!-- Bagian atas: brand, navigasi, kontak -->
+        <div class="row g-4 footer-top">
+          <div class="col-lg-5 col-md-12">
+            <a class="footer-brand" href="#home"
+              >Yoseph<span class="text-accent">.</span></a
+            >
+            <p class="footer-about">
+              Web Developer yang membangun website responsif dan berkinerja
+              tinggi, dari konsep hingga implementasi.
+            </p>
+            <span class="footer-status">
+              <span class="badge-dot" aria-hidden="true"></span> Terbuka untuk
+              freelance &amp; project
+            </span>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6">
+            <h2 class="footer-heading">Navigasi</h2>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#certificates">Certificates</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-6">
+            <h2 class="footer-heading">Kontak</h2>
+            <ul class="footer-links footer-contact">
+              <li>
+                <a href="mailto:yovanhayon@gmail.com">
+                  <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                  <span>yovanhayon@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/6282147304198"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                  <span>+62 821 4730 4198</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/yosephkewena"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-linkedin" aria-hidden="true"></i>
+                  <span>linkedin.com/in/yosephkewena</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bagian bawah: hak cipta dan ikon sosial -->
+        <div class="footer-bottom">
+          <p class="footer-copy mb-0">
+            © <span id="footerYear">2026</span>
+            <strong class="text-accent">Yoseph</strong>. Crafted with
+            <i
+              class="bi bi-heart-fill"
+              style="color: #ef4444; font-size: 0.8rem"
+              aria-hidden="true"
+            ></i>
+            <span class="visually-hidden">cinta</span>
+            for Web Development.
+          </p>
+          <div class="footer-social-row">
           <a
             href="https://github.com/yovanhayon-ctrl"
             class="footer-social"
             target="_blank"
             rel="noopener noreferrer"
             title="GitHub"
-            ><i class="bi bi-github"></i
+            aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/yosephkewena"
@@ -963,7 +1027,7 @@
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"
-            ><i class="bi bi-linkedin"></i
+            aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i
           ></a>
           <a
             href="https://instagram.com/yovanhayon"
@@ -971,14 +1035,15 @@
             target="_blank"
             rel="noopener noreferrer"
             title="Instagram"
-            ><i class="bi bi-instagram"></i
+            aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i
           ></a>
           <a
             href="mailto:yovanhayon@gmail.com"
             class="footer-social"
             title="Email"
-            ><i class="bi bi-envelope"></i
+            aria-label="Kirim email"><i class="bi bi-envelope" aria-hidden="true"></i
           ></a>
+          </div>
         </div>
       </div>
     </footer>

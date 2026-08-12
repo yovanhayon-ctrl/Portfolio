@@ -50,7 +50,18 @@ document.addEventListener("DOMContentLoaded", function () {
   initNavbar();
   initForm();
   initCertificateModal();
+  initFooterYear();
 });
+
+// ===== TAHUN HAK CIPTA =====
+// Angka di HTML sengaja diisi manual sebagai cadangan, supaya tetap tampil
+// kalau JavaScript gagal jalan. Di sini hanya disegarkan ke tahun berjalan.
+function initFooterYear() {
+  const el = document.getElementById("footerYear");
+  if (el) {
+    el.textContent = new Date().getFullYear();
+  }
+}
 
 // ===== SCROLL ANIMATIONS =====
 function initScrollAnimations() {
